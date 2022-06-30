@@ -1,0 +1,174 @@
+body{
+   margin: 0;
+   
+}
+
+/* ヘッダー */
+
+.mainheader{
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    
+    /* padding: 0 30px 0 10px; */
+    /* background-color: rgb(249, 250, 252); */
+    background-color: #424242 ;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    z-index: 2;
+}
+
+.nazo{
+    height: 70px;
+}
+
+.headercontent{
+    margin: 0;
+    color: azure;
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.headerlink{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerposting{
+    width: 15%;
+}
+
+
+/* リーグ */
+
+.leagename{
+    padding-top: 45px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(189, 161, 254);
+   
+    
+}
+
+.line{
+    width: 60%;
+}
+
+.allteam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.team{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    padding-right: 25px;
+}
+
+.teamname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: 20px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamlogo{
+    width: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .logo{
+        margin: 0 auto;
+    }
+
+    
+    .headercontent{
+        width: 95%;
+        position: absolute;
+        display: flex;
+        justify-content: right;
+    }
+    .headerlink{
+        display: none;
+    }
+
+    .headerposting{
+        font-size: 13px;
+        width: 60px;
+    } 
+
+    .leagename{
+        height: 60px;
+        font-size: 20px;
+        
+    }
+    .team{  
+        width: 70%;
+        height: 40px;   
+        margin-top: 7px;
+        
+        padding-right: 0;
+    }
+    
+    .teamname{
+        font-size: 15px;
+    }
+    .teamlogo{
+        width: 40px;
+    }
+    .line{
+        width: 85%;
+    }
+}
+
+/* footer */
+.footerlayout{
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    background-color: #424242 ;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    z-index: 20;
+    justify-content: center;
+}
+
+.footercontent{
+    margin: 0;
+    color: azure;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    .footerlayout{
+        display: none;
+    }
+}
